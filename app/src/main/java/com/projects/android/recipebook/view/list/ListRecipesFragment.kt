@@ -3,10 +3,16 @@ package com.projects.android.recipebook.view.list
 import android.graphics.drawable.Icon
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
+import androidx.core.view.MenuHost
+import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -18,6 +24,7 @@ import androidx.recyclerview.widget.DividerItemDecoration.VERTICAL
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.projects.android.recipebook.R
 import com.projects.android.recipebook.databinding.FragmentListRecipesBinding
+import com.projects.android.recipebook.view.single.SingleRecipeFragmentDirections
 import kotlinx.coroutines.launch
 
 class ListRecipesFragment : Fragment() {
@@ -39,6 +46,7 @@ class ListRecipesFragment : Fragment() {
 		// RECYCLER VIEW
 		_binding = FragmentListRecipesBinding.inflate(inflater, container, false)
 		binding.recipesRecyclerViewList.layoutManager = LinearLayoutManager(context)
+		setHasOptionsMenu(true)
 		return binding.root
 	}
 
@@ -72,6 +80,38 @@ class ListRecipesFragment : Fragment() {
 
 		binding.addRecipeFABList.setOnClickListener {
 			findNavController().navigate(ListRecipesFragmentDirections.fromListRecipesFragmentToAddRecipeFragment(-2))
+		}
+	}
+
+	override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+		inflater.inflate(R.menu.fragment_menu_settings, menu)
+		super.onCreateOptionsMenu(menu, inflater)
+	}
+
+	// Обрабатываем клики по пунктам меню
+	override fun onOptionsItemSelected(item: MenuItem): Boolean {
+		return when (item.itemId) {
+			R.id.delete_recipe -> {
+				AlertDialog.Builder(requireContext())
+					.setTitle("Confirm to Delete?")
+					.setIcon(R.drawable.ic_baseline_dangerous_24)
+					.setPositiveButton(android.R.string.ok) { _, _ ->
+						viewLifecycleOwner.lifecycleScope.launch {
+							// TODO: Логика удаления
+						}
+						findNavController().navigateUp()
+					}
+					.setNegativeButton(android.R.string.cancel, null)
+					.show()
+				true
+			}
+
+			R.id.action_settings -> {
+				findNavController().navigate(R.id.action_fragmentListRecipes_to_settingsFragment)
+				true
+			}
+
+			else -> super.onOptionsItemSelected(item)
 		}
 	}
 

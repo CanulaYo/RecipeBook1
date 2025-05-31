@@ -8,4 +8,6 @@
 	<color name = "ocean_green">#FF03D5C0</color>
 	<color name = "tan">#EABC43</color>
 	<color name = "mud">#273F42</color>
+	<color name = "gray">#404040</color>
+	<color name = "white">#FFFFFF</color>
 </resources>

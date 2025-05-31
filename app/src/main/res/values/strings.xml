@@ -1,58 +1,70 @@
 <resources>
-	<string name = "app_name">Recipe Book</string>
+    <string name="app_name">Recipe Book</string>
 
-	<!-- Add Recipe Fragment -->
-	<string name = "menu_add_recipe_cancel">Cancel</string>
-	<string name = "menu_add_recipe_save">Save</string>
-	<string name = "add_recipe_fragment_recipe_name">Name</string>
-	<string name = "add_recipe_fragment_take_picture">Take a picture</string>
-	<string name = "add_recipe_fragment_is_cooked">Is Cooked</string>
-	<string name = "add_recipe_fragment_is_veg">Is Veg</string>
-	<string name = "add_recipe_fragment_course">Course</string>
-	<string name = "add_recipe_fragment_preparation_time">Prep. Time</string>
-	<string name = "add_recipe_fragment_portions">Portions</string>
-	<string name = "item_add_recipe_fragment_ingredient_quantity">Quantity</string>
-	<string name = "item_add_recipe_fragment_ingredient_name">Ingredient Name</string>
-	<string name = "add_recipe_fragment_preparation">Preparation</string>
+    <!-- Add Recipe Fragment -->
+    <string name="menu_add_recipe_cancel">Отмена</string>
+    <string name="menu_add_recipe_save">Сохранить</string>
+    <string name="add_recipe_fragment_recipe_name">Название</string>
+    <string name="add_recipe_fragment_take_picture">Сделать фото</string>
+    <string name="add_recipe_fragment_is_cooked">Жареное</string>
+    <string name="add_recipe_fragment_is_veg">Без мяса</string>
+    <string name="add_recipe_fragment_course">Блюдо</string>
+    <string name="add_recipe_fragment_preparation_time">Время готовки</string>
+    <string name="add_recipe_fragment_portions">Порции</string>
+    <string name="item_add_recipe_fragment_ingredient_quantity">Величина</string>
+    <string name="item_add_recipe_fragment_ingredient_name">Название ингредиента</string>
+    <string name="add_recipe_fragment_preparation">Инструкция</string>
 
-	<!-- Add Tag Recipe Fragment -->
-	<string name = "add_tag_recipe_search">Search</string>
+    <!-- Add Tag Recipe Fragment -->
+    <string name="add_tag_recipe_search">Поиск</string>
 
-	<!-- Filters Fragment -->
-	<string name = "filters_fragment_search_something">Search Something…</string>
-	<string name = "filters_fragment_search">Search</string>
-	<string name = "filters_fragment_course_starter">Starter</string>
-	<string name = "filters_fragment_course_first">First</string>
-	<string name = "filters_fragment_course_second">Second</string>
-	<string name = "filters_fragment_course_side">Side</string>
-	<string name = "filters_fragment_course_dessert">Dessert</string>
-	<string name = "filters_fragment_preparation_time_5_min">5 min</string>
-	<string name = "filters_fragment_preparation_time_30_min">30 min</string>
-	<string name = "filters_fragment_preparation_time_1_hour">1 hour</string>
-	<string name = "filters_fragment_preparation_time_2_hours">2 hours</string>
-	<string name = "filters_fragment_preparation_time_4_hours">4 hours</string>
-	<string name = "filters_fragment_preparation_time_unlimited">Unlimited</string>
-	<string name = "filters_fragment_is_not_veg">Not Veg</string>
-	<string name = "filters_fragment_is_veg">Veg</string>
-	<string name = "filters_fragment_is_cooked">Cooked</string>
-	<string name = "filters_fragment_is_not_cooked">Not Cooked</string>
+    <!-- Filters Fragment -->
+    <string name="filters_fragment_search_something">Введите что-нибудь…</string>
+    <string name="filters_fragment_search">Поиск</string>
+    <string name="filters_fragment_course_starter">Стартер</string>
+    <string name="filters_fragment_course_first">Первое</string>
+    <string name="filters_fragment_course_second">Второе</string>
+    <string name="filters_fragment_course_side">Закуска</string>
+    <string name="filters_fragment_course_dessert">Дессерт</string>
+    <string name="filters_fragment_preparation_time_5_min">5 мин</string>
+    <string name="filters_fragment_preparation_time_30_min">30 мин</string>
+    <string name="filters_fragment_preparation_time_1_hour">1 час</string>
+    <string name="filters_fragment_preparation_time_2_hours">2 часа</string>
+    <string name="filters_fragment_preparation_time_4_hours">4 часа</string>
+    <string name="filters_fragment_preparation_time_unlimited">Без лимита</string>
+    <string name="filters_fragment_is_not_veg">Без мяса</string>
+    <string name="filters_fragment_is_veg">С мясом</string>
+    <string name="filters_fragment_is_cooked">Жареное</string>
+    <string name="filters_fragment_is_not_cooked">Не жареное</string>
 
-	<!-- Single Recipe Fragment -->
-	<string name = "menu_delete_recipe">Delete</string>
-	<string name = "menu_edit_recipe">Edit</string>
-	<string name = "single_recipe_fragment_course_label">course:</string>
-	<string name = "single_recipe_fragment_prepTime_label">prep. time:</string>
-	<string name = "single_recipe_fragment_portions_label">portions:</string>
-	<string name = "single_recipe_fragment_isCooked">is cooked</string>
-	<string name = "single_recipe_fragment_isNotCooked">is not cooked</string>
-	<string name = "single_recipe_fragment_isVeg">is veg</string>
-	<string name = "single_recipe_fragment_isNotVeg">is not veg</string>
+    <!-- Single Recipe Fragment -->
+    <string name="menu_delete_recipe">Удалить</string>
+    <string name="menu_edit_recipe">Изменить</string>
+    <string name="single_recipe_fragment_course_label">Блюдо:</string>
+    <string name="single_recipe_fragment_prepTime_label">Время приг.:</string>
+    <string name="single_recipe_fragment_portions_label">Порций:</string>
+    <string name="single_recipe_fragment_isCooked">Жареное</string>
+    <string name="single_recipe_fragment_isNotCooked">Не жареное</string>
+    <string name="single_recipe_fragment_isVeg">С мясом</string>
+    <string name="single_recipe_fragment_isNotVeg">Без мяса</string>
 
-	<!-- List Recipe Fragment -->
-	<string name = "list_recipes_fragment_add_recipe">Add Recipe</string>
-	<string name = "list_recipes_fragment_extend_filter_panel">Extend the filter panel</string>
-	<string name = "item_list_recipes_fragment_cooked">Is or is not cooked</string>
-	<string name = "item_list_recipes_fragment_veg">Is or is not veg</string>
-	<string name = "item_list_recipes_fragment_course">Course</string>
+    <!-- List Recipe Fragment -->
+    <string name="list_recipes_fragment_add_recipe">Добавить рецепт</string>
+    <string name="list_recipes_fragment_extend_filter_panel">Расширить поисковую панель</string>
+    <string name="item_list_recipes_fragment_cooked">Жареное или нет</string>
+    <string name="item_list_recipes_fragment_veg">С или без мяса</string>
+    <string name="item_list_recipes_fragment_course">Блюдо</string>
+
+    <!-- Settings Fragment -->
+    <string name="text_logout">Выйти из аккаунта</string>
+    <string name="text_switch_theme">Сменить тему</string>
+
+    <!--Authorization Fragments -->
+    <string name="title_registration">Регистрация</string>
+    <string name="title_authorization">Авторизация</string>
+    <string name="edit_text_email">Почта</string>
+    <string name="edit_text_password">Пароль</string>
+    <string name="edit_text_password_again">Повторите пароль</string>
+    <string name="enter_button_text">Войти</string>
 
 </resources>

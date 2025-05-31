@@ -4,10 +4,10 @@ import com.google.gson.annotations.SerializedName
 
 enum class UnitOfMeasure(value: String) {
 	@SerializedName("0")
-	GRAM("g"),
+	GRAM("г"),
 
 	@SerializedName("1")
-	MILLILITERS("ml"),
+	MILLILITERS("мл"),
 
 	@SerializedName("2")
 	TO_TASTE("T.T.");
